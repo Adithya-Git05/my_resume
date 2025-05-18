@@ -38,7 +38,7 @@
     }
 
     nav a {
-      font-family: 'Poppins', sans-serif; /* Custom font */
+      font-family: 'Poppins', sans-serif;
       color: #fff;
       text-decoration: none;
       font-weight: 500;
@@ -50,7 +50,47 @@
       color: #ffe85c;
     }
 
-    /* ... rest of your styles stay unchanged ... */
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #6a11cb;
+      margin-bottom: 1rem;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      color: #222;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #2575fc;
+    }
+
+    a {
+      color: #2575fc;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 1rem;
+    }
   </style>
 </head>
 
@@ -68,7 +108,8 @@
   </nav>
 
   <header>
-    <img src="profile.jpg" alt="Profile Picture" class="profile-img" />
+    <!-- Fallback if image doesn't load -->
+    <img src="profile.jpg" alt="Profile Picture" class="profile-img" onerror="this.style.display='none'" />
     <h1>Adithya Balakrishnan</h1>
     <p><em>Information Science Engineering Student | Tech Enthusiast | Lifelong Learner</em></p>
   </header>
@@ -102,15 +143,15 @@
   <section id="projects">
     <h2>Projects</h2>
     <ul>
-      <li class="project-link">
+      <li>
         🧠 <strong>Diabetes Prediction:</strong>
         <a href="https://github.com/Adithya-Git05/DATA-CLEANING" target="_blank">GitHub Repo</a>
       </li>
-      <li class="project-link">
+      <li>
         🌧️ <strong>Rainfall Prediction:</strong>
         <a href="https://github.com/Adithya-Git05/RAINFALL" target="_blank">GitHub Repo</a>
       </li>
-      <li class="project-link">
+      <li>
         🗣️ <strong>AI Voice Diary:</strong>
         <a href="https://github.com/Adithya-Git05/Audio-Diary-final" target="_blank">GitHub Repo</a>
       </li>
